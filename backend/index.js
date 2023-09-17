@@ -44,7 +44,7 @@ app.post('/addEmployee', async (req, res)=>{
 
 app.post("/verify", async (req, res)=>{
     try{
-        const user = await Employee.findOne({name:req.body.name});
+        const user = await Employee.findOne({email:req.body.name, password:req.body.password});
         console.log(user);
         return res.status(200).send(user);
     } catch(error){
