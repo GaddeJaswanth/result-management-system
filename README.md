@@ -1,10 +1,10 @@
 # Result Management System
-A full-stack MERN application that manages student results.
+A full-stack MERN application that manages student results. <br />
 
-M - MongoDB -> Database
-E - ExpressJS -> Framework for Handling HTTP requests, Error Handling, Routing, etc.
-R - ReactJS -> Frontend Components (UI)
-N - NodeJS -> Runtime Environment to run JavaScript on the server side.
+M - MongoDB -> Database <br />
+E - ExpressJS -> Framework for Handling HTTP requests, Error Handling, Routing, etc. <br />
+R - ReactJS -> Frontend Components (UI) <br />
+N - NodeJS -> Runtime Environment to run JavaScript on the server side. <br />
 
 # Backend Components
 models (dir) -> Contains Schemas and Models. <br />
