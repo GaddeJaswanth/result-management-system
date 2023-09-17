@@ -20,7 +20,7 @@ function AddResults() {
   }
 
   const handleChange = (e) => {
-    setResults({...results, [e.target.name]:e.target.value});
+    setResults({...results, [e.target.name]:e.target.value.toUpperCase()});
   }
 
   const handleSubmit = () => {
@@ -41,7 +41,7 @@ function AddResults() {
       <table className='addResults'>
         <tr>
           <th>Hall Ticket No.</th>
-          <td><input type='text' placeholder='Enter Hall Ticket Number' value={results.regNo.toUpperCase()} name='regNo' onChange={(e)=>handleChange(e)} onBlur={()=>getName()} className='rounded md' maxLength={10}/></td>
+          <td><input type='text' placeholder='Enter Hall Ticket Number' value={results.regNo} name='regNo' onChange={(e)=>handleChange(e)} onBlur={()=>getName()} className='rounded md' maxLength={10}/></td>
         </tr>
 
         <tr>
@@ -53,17 +53,17 @@ function AddResults() {
 
         <tr>
           <th>Data Structures</th>
-          <td><input type='text' placeholder='Enter DS Result' name='DS' value={results.DS.toUpperCase()} onChange={(e)=>handleChange(e)} className='rounded md' maxLength={2}/></td>
+          <td><input type='text' placeholder='Enter DS Result' name='DS' value={results.DS} onChange={(e)=>handleChange(e)} className='rounded md' maxLength={2}/></td>
         </tr>
 
         <tr>
           <th>Computer Networks</th>
-          <td><input type='text' placeholder='Enter CN Result' name='CN' value={results.CN.toUpperCase()} onChange={(e)=>handleChange(e)} className='rounded md' maxLength={2}/></td>
+          <td><input type='text' placeholder='Enter CN Result' name='CN' value={results.CN} onChange={(e)=>handleChange(e)} className='rounded md' maxLength={2}/></td>
         </tr>
 
         <tr>
           <th>Operating Systems</th>
-          <td><input type='text' placeholder='Enter OS Result' name='OS' value={results.OS.toUpperCase()} onChange={(e)=>handleChange(e)} className='rounded md' maxLength={2}/></td>
+          <td><input type='text' placeholder='Enter OS Result' name='OS' value={results.OS} onChange={(e)=>handleChange(e)} className='rounded md' maxLength={2}/></td>
         </tr>
 
         <tr>
