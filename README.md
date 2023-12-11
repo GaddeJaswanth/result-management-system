@@ -1,5 +1,5 @@
 # Result Management System
-A full-stack that manages student results. <br />
+A full-stack web application that manages student results. <br />
 Made using the MERN stack, TailwindCSS, and Mongoose. <br />
 
 M - MongoDB -> Database <br />
